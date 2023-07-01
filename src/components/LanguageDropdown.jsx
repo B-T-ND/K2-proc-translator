@@ -1,4 +1,6 @@
 import React, { useState } from 'react';
+import "../css/Button.css"
+import "../css/Dropdown.css"
 
 const LanguageDropdown = () => {
   const [isOpen, setIsOpen] = useState(false);
@@ -23,7 +25,7 @@ const LanguageDropdown = () => {
 
   return (
     <div className="language-dropdown">
-      <button className="dropdown-button" onClick={toggleDropdown}>
+      <button className="dropdown-button button-4" role="button" onClick={toggleDropdown}>
         {selectedLanguage ? selectedLanguage.label : 'Select a language'}
       </button>
       {isOpen && (
@@ -31,7 +33,7 @@ const LanguageDropdown = () => {
           {languageOptions.map((option) => (
             <div
               key={option.value}
-              className="dropdown-item"
+              className="dropdown-item button-4"
               onClick={() => handleLanguageChange(option)}
             >
               {option.label}

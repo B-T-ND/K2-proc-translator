@@ -1,10 +1,11 @@
 import React, { useState } from 'react'
+import "../css/Button.css"
 
 const LanguageDropdown = () => {
   const [selectedLanguage, setSelectedLanguage] = useState("")
-  console.log(selectedLanguage);
   const handleLanguageChange = (event) => {
     setSelectedLanguage(event.target.value);
+    console.log(selectedLanguage);
   };
 
   const languageOptions = [
@@ -17,7 +18,7 @@ const LanguageDropdown = () => {
   ];
 
   return (
-    <select value={selectedLanguage} onChange={handleLanguageChange}>
+    <select   value={selectedLanguage} onChange={handleLanguageChange}>
       {languageOptions.map((option) => (
         <option key={option.value} value={option.value}>
           {option.label}
