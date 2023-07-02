@@ -39,8 +39,12 @@ const LanguageDropdown = ({title, selectedLanguage, setSelectedLanguage}) => {
 
   return (
     <div className="language-dropdown">
-      <button className="dropdown-button button-4" role="button" onClick={toggleDropdown}>
-        {selectedLanguage ? selectedLanguage.label : 'Select a language'}
+      <button 
+      className="dropdown-button button-4" 
+      role="button" 
+      onClick={toggleDropdown}
+      title={title}>
+        {selectedLanguage ? selectedLanguage.label : 'A/诶'}
       </button>
       {isOpen && (
         <div className="dropdown-panel">

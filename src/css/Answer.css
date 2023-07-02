@@ -1,9 +1,22 @@
 .answer-panel {
-  margin-top: 3px;
-  width: 100%;
-  color: black;
-  background-color: white;
-  border-radius: 5px;
-  display: flex;
-  font-weight: 500;
+    padding: 1%;
+    margin-top: 3px;
+    width: 100%;
+    color: black;
+    background-color: white;
+    border-radius: 5px;
+    display: flex;
+    flex-wrap: wrap;
+}
+.strong {
+    font-weight: 500;
+}
+
+.answer-panel-heading {
+    width: 100%;
+}
+
+.answer-panel-translation {
+  border-top: 1px;
+  border-color: black;
 }
